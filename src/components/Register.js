@@ -36,7 +36,7 @@ class Register extends Component {
 
       gender : this.state.gender,
       email : this.state.email,
-      date_of_birth : this.state.date_of_birth,
+      dateOfBirth : this.state.dateOfBirth,
       phone : this.state.phone
     }
 
@@ -81,7 +81,7 @@ class Register extends Component {
                     </div>
                     <div className='form-group'>
                           <label> Date Of Birth: </label><br/>
-                          <input className='form-control' type='text' name='date_of_birth' onChange={this.onChange} value={this.state.date_of_birth} />
+                          <input className='form-control' type='date' name='dateOfBirth' onChange={this.onChange} value={this.state.dateOfBirth} />
                     </div>
             </div>
             <div className='col-md-6'>

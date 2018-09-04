@@ -81,7 +81,19 @@ input[type="password"] {
   margin-right: 20px;
   font-size: 20px;
 }
-
+input[type="date"] {
+  background-color: #202733;
+  border: 0;
+  border-bottom: solid 1px #f16051;
+  width: 100%;
+  padding-bottom: 4px;
+  color: #fff !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
 input[type="text"] { 
     outline: none;
 }
