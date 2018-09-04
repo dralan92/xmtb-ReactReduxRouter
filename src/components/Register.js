@@ -62,61 +62,55 @@ class Register extends Component {
   render() {
     return (
       <div className='wrapper'>
-         <div className='main'>
-            <div className='container'>
-              <h1>Register New Rider</h1>
-              <form onSubmit={this.onSubmit}>
-              <div className='row'>
-                  <div className='col-md-6'>
-                    <div>
+      <form onSubmit={this.onSubmit}>
+        <div className ='container'>
+          <h1 className ='reg_header'>Register New Rider </h1>
+          <div className ='row'>
+            <div className='col-md-6'>
+                      <div>
                         <label> Username: </label><br/>
-                        <input type='text' name='username' onChange={this.onChange} value={this.state.username} />
+                        <input className='form-control' type='text' name='username' onChange={this.onChange} value={this.state.username} />
                     </div>
-                    <div>
+                    <div className='form-group'>
                           <label> Zip: </label><br/>
-                          <input type='text' name='zip' onChange={this.onChange} value={this.state.zip} />
+                          <input className='form-control' type='text' name='zip' onChange={this.onChange} value={this.state.zip} />
                     </div>
-                    <div>
+                    <div className='form-group'>
                           <label> Gender: </label><br/>
-                          <input type='text' name='gender' onChange={this.onChange} value={this.state.gender} />
+                          <input className='form-control' type='text' name='gender' onChange={this.onChange} value={this.state.gender} />
                     </div>
-                    <div>
+                    <div className='form-group'>
                           <label> Date Of Birth: </label><br/>
-                          <input type='text' name='date_of_birth' onChange={this.onChange} value={this.state.date_of_birth} />
+                          <input className='form-control' type='text' name='date_of_birth' onChange={this.onChange} value={this.state.date_of_birth} />
                     </div>
-                      
-      
-                  </div>
-
-                  <div className='col-md-6'>
+            </div>
+            <div className='col-md-6'>
                         <div>
                           <label> Password: </label><br/>
-                          <input type='password' name='password' onChange={this.onChange} value={this.state.password}/>
+                          <input className='form-control' type='password' name='password' onChange={this.onChange} value={this.state.password}/>
                         </div>
-                        <div>
+                        <div className='form-group'>
                           <label> Address: </label><br/>
-                          <input type='text' name='address' onChange={this.onChange} value={this.state.address} />
+                          <input className='form-control' type='text' name='address' onChange={this.onChange} value={this.state.address} />
                         </div>
-                        <div>
+                        <div className='form-group'>
                           <label> Email: </label><br/>
-                          <input type='text' name='email' onChange={this.onChange} value={this.state.email} />
+                          <input className='form-control' type='text' name='email' onChange={this.onChange} value={this.state.email} />
                         </div>
-                        <div>
+                        <div className='form-group'>
                           <label> Phone: </label><br/>
-                          <input type='text' name='phone' onChange={this.onChange} value={this.state.phone} />
+                          <input className='form-control' type='text' name='phone' onChange={this.onChange} value={this.state.phone} />
                         </div>
-                      
-      
-                  </div>
-              </div>
-              <div className= 'row'>
-                <div className='col-lg-6'>
-                  <button type='submit' className = 'btn btn-lg'>Register</button>
-                </div>
-              </div>
-              </form>
             </div>
+          </div>
+          <div className='row'>
+                <div className='col'>
+                  <button className='form-control' type='submit' className = 'btn reg_button'>Register</button>
+                </div>
+          </div>
         </div>
+       
+      </form>
       </div>
      
     )

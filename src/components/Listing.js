@@ -26,8 +26,20 @@ class Listing extends Component {
       ));
     return (
       <div>
-        <h1>Rider List </h1>
-            {riderListView}
+        
+            
+        <div className='wrapper'>
+            <div className='main'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-xs-2'>
+                            <h1>Rider List </h1>
+                                {riderListView}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     )
   }
