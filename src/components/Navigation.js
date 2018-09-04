@@ -4,11 +4,20 @@ import {NavLink} from 'react-router-dom';
 class Navigation extends Component {
   render() {
     return (
-      <div>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/register'>Register</NavLink>
-        <NavLink to='/listing'>Listing</NavLink>
-      </div>
+      <ul className='nav justify-content-center nav-pills nav-justified navigation'>
+        <li className='nav-item'>
+          <NavLink to='/' className='nav-link'>Home</NavLink>
+        </li>
+        <li className='nav-item'>
+          <NavLink to='/register' className='nav-link'>Register</NavLink>
+        </li>
+        <li className='nav-item'>
+        <NavLink to='/listing' className='nav-link'>Listing</NavLink>
+        </li>
+        
+        
+        
+      </ul>
     )
   }
 }
