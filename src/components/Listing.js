@@ -19,7 +19,7 @@ class Listing extends Component {
     }
   render() {
       const riderListView = this.state.riders.map(rider=>(
-        <li key = 'rider.id' class="list-group-item ">
+        <li key = {rider.id} className="list-group-item ">
             <div className='container'>
                 <div className='row'>
                     <div className='col-sm-2'>
